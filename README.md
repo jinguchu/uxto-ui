@@ -2,7 +2,11 @@
 
 跨平台 UI 组件库，支持 **Android**、**iOS**、**鸿蒙** 三端打包。
 
-[文档网站](./docs/index.md) | [快速开始](#快速开始) | [组件列表](#组件列表)
+[在线手册](https://jinguchu.github.io/uxto-ui/) | [源码手册](https://jinguchu.github.io/uxto-ui/guide/quickstart) | [快速开始](#快速开始) | [组件列表](#组件列表)
+
+## 当前版本
+
+`@atooyu/uxto-ui@1.2.1`（2026-11-10），详见 [更新日志](https://jinguchu.github.io/uxto-ui/guide/changelog.html)。修复独立 Checkbox、提供真实上传能力，并补齐全部 50 个组件类型声明。
 
 ## 安装
 
@@ -126,7 +130,11 @@ npm run build:mp-weixin
 
 ## 使用方式
 
-组件支持 easycom 自动导入，无需手动引入：
+按[快速配置](https://jinguchu.github.io/uxto-ui/guide/quickstart#快速配置)设置 easycom 路径与 SCSS 变量后，组件可自动导入：
+
+```json
+{ "easycom": { "autoscan": true, "custom": { "^u-(.*)": "@atooyu/uxto-ui/src/components/u-$1/u-$1.vue" } } }
+```
 
 ```vue
 <template>
@@ -204,7 +212,8 @@ import { createUniBuildConfig } from '@uxto-ui/build'
 ### 构建组件库
 
 ```bash
-npm run build:lib
+npm run build:all
+# build:types 会检查全部 50 个组件声明文件
 ```
 
 ### 发布
