@@ -266,3 +266,10 @@ npm publish --access public
 ## License
 
 MIT
+## 完整开发手册（2026-11-12）
+
+- [组件示例](https://jinguchu.github.io/uxto-ui/components/)
+- [50 个公开组件及子组件 API](https://jinguchu.github.io/uxto-ui/reference/)
+- [主题与预览范围](https://jinguchu.github.io/uxto-ui/guide/theme)
+
+本次更新修正示例与源码的偏差、补齐二维码及条码文档，并自动校验公开组件覆盖情况。
